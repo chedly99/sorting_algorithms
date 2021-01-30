@@ -24,20 +24,21 @@ void selection_sort(int *array, size_t size)
 {
 unsigned int i, j;
 int min;
-
 if (array == NULL || size < 2)
 return;
+
 for (i = 0; i < size - 1; i++)
 {
 min = i;
-j = i + 1;
-while (j < size)
+for (j = i + 1; j < size; j++)
 {
 if (array[j] < array[min])
 min = j;
-j++;
 }
+if ((size_t)min != i)
+{
 swap_items(&array[min], &array[i]);
 print_array(array, size);
+}
 }
 }

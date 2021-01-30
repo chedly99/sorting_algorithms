@@ -3,7 +3,6 @@
 * At least four different sorting algorithms
 * What is the Big O notation, and how to evaluate the time
 * complexity of an algorithm
-* How to select the best sorting algorithm for a given input
+* How to select the best sorting algorithm for a given input<br>
 ```What is a stable sorting algorithm```
-<br>
 <img src = "https://www.holbertonschool.com/holberton-logo.png">

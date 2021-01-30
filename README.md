@@ -1,5 +1,5 @@
 # Sorting_algorithms & Big O
-### Lear:
+## Learn:
 * At least four different sorting algorithms
 * What is the Big O notation, and how to evaluate the time
 * complexity of an algorithm

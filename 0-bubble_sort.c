@@ -1,37 +1,27 @@
 #include "sort.h"
-/**
-* swap_items - swap_2_integers
-* @x: integer1
-* @y: integer2
-*/
-void swap_items(int *x, int *y)
-{
-int v;
-
-v = *x;
-*x = *y;
-*y = v;
-}
 
 /**
-* bubble_sort - sort integer in print_array
-* @array: array
-* @size: size of array
+* bubble_sort - Sortes inetegers in an array
+* @array: array of integers
+* @size: size of the array
 */
+
 void bubble_sort(int *array, size_t size)
 {
-unsigned int i;
-unsigned int j;
+unsigned int i, j;
+int tmp;
 
-if (array == NULL || size < 2)
+if (!array || size < 2)
 return;
-for (i = 0; i < size - 1; i++)
+for (i = 0; i < size; i++)
 {
-for (j = 0; j < size - 1 ; j++)
+for (j = 0; j < size - 1; j++)
 {
 if (array[j] > array[j + 1])
 {
-swap_items(&array[j], &array[j + 1]);
+tmp = array[j];
+array[j] = array[j + 1];
+array[j + 1] = tmp;
 print_array(array, size);
 }
 }
